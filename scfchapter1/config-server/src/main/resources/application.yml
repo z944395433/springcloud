@@ -1,0 +1,15 @@
+server:
+  port: 8012
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/z944395433/SpringCloudConfig/
+          search-paths: respo
+          username:
+          password:
+      label: master
+  application:
+    name: config-server
+
